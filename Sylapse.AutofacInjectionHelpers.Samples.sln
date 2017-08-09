@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{022273E5-C4B2-465C-B46E-AC822617AF9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{C6ACB232-666D-465C-A68E-4C521775849C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sylapse.AutofacLateInjection", "src\Sylapse.AutofacLateInjection\Sylapse.AutofacLateInjection.csproj", "{8D9C8E6D-C08A-4231-AAF6-492F58A45A1A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sylapse.AutofacPlatformInjection", "src\Sylapse.AutofacPlatformInjection\Sylapse.AutofacPlatformInjection.csproj", "{0AE39A8C-A524-4A6C-B2AA-DE15E1765583}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sylapse.AutofacPlatformInjection.Droid", "src\Sylapse.AutofacPlatformInjection.Droid\Sylapse.AutofacPlatformInjection.Droid.csproj", "{43C164A8-D61A-48EE-8B8A-4E28AE658879}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sylapse.AutofacPlatformInjection.iOS", "src\Sylapse.AutofacPlatformInjection.iOS\Sylapse.AutofacPlatformInjection.iOS.csproj", "{B622F4F4-104D-4602-8762-3B6DB4D46158}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSample.Droid", "DroidSample\MainSample.Droid.csproj", "{AC800F14-6BC9-4CE1-8593-0B669796ED78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainSample", "MainSample\MainSample.csproj", "{84482571-8E31-4650-A4F8-2161B965D5B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D9C8E6D-C08A-4231-AAF6-492F58A45A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D9C8E6D-C08A-4231-AAF6-492F58A45A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D9C8E6D-C08A-4231-AAF6-492F58A45A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D9C8E6D-C08A-4231-AAF6-492F58A45A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE39A8C-A524-4A6C-B2AA-DE15E1765583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE39A8C-A524-4A6C-B2AA-DE15E1765583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE39A8C-A524-4A6C-B2AA-DE15E1765583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE39A8C-A524-4A6C-B2AA-DE15E1765583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43C164A8-D61A-48EE-8B8A-4E28AE658879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C164A8-D61A-48EE-8B8A-4E28AE658879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C164A8-D61A-48EE-8B8A-4E28AE658879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C164A8-D61A-48EE-8B8A-4E28AE658879}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B622F4F4-104D-4602-8762-3B6DB4D46158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B622F4F4-104D-4602-8762-3B6DB4D46158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B622F4F4-104D-4602-8762-3B6DB4D46158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B622F4F4-104D-4602-8762-3B6DB4D46158}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC800F14-6BC9-4CE1-8593-0B669796ED78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC800F14-6BC9-4CE1-8593-0B669796ED78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC800F14-6BC9-4CE1-8593-0B669796ED78}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AC800F14-6BC9-4CE1-8593-0B669796ED78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC800F14-6BC9-4CE1-8593-0B669796ED78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC800F14-6BC9-4CE1-8593-0B669796ED78}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{84482571-8E31-4650-A4F8-2161B965D5B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84482571-8E31-4650-A4F8-2161B965D5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84482571-8E31-4650-A4F8-2161B965D5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84482571-8E31-4650-A4F8-2161B965D5B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D9C8E6D-C08A-4231-AAF6-492F58A45A1A} = {022273E5-C4B2-465C-B46E-AC822617AF9C}
+		{0AE39A8C-A524-4A6C-B2AA-DE15E1765583} = {022273E5-C4B2-465C-B46E-AC822617AF9C}
+		{43C164A8-D61A-48EE-8B8A-4E28AE658879} = {022273E5-C4B2-465C-B46E-AC822617AF9C}
+		{B622F4F4-104D-4602-8762-3B6DB4D46158} = {022273E5-C4B2-465C-B46E-AC822617AF9C}
+		{AC800F14-6BC9-4CE1-8593-0B669796ED78} = {C6ACB232-666D-465C-A68E-4C521775849C}
+		{84482571-8E31-4650-A4F8-2161B965D5B3} = {C6ACB232-666D-465C-A68E-4C521775849C}
+	EndGlobalSection
+EndGlobal
