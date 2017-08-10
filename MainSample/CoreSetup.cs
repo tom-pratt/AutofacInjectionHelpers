@@ -10,7 +10,9 @@ namespace MainSample
     {
         public void Initialize(ContainerBuilder builder)
         {
-            builder.RegisterType<FirstViewModel>();
+            // Make objects survive an Android rotations by scoping them as InstancePerViewLifetime
+            builder.RegisterType<MainViewModel>().InstancePerViewLifetime();
+            builder.RegisterType<FirstViewModel>().InstancePerViewInstance();
         }
     }
 }

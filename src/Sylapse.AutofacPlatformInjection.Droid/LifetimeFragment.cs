@@ -28,18 +28,17 @@ namespace Sylapse.AutofacPlatformInjection.Droid
 
 
         private string _lifetimeTag;
-        protected virtual string LifetimeTag => _lifetimeTag;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             _lifetimeTag = savedInstanceState == null ? Guid.NewGuid().ToString() : savedInstanceState.GetString(StateLifetimeTag);
-            _scopeFragment = (ScopeFragment)FragmentManager.FindFragmentByTag(LifetimeTag);
+            _scopeFragment = (ScopeFragment)FragmentManager.FindFragmentByTag(_lifetimeTag);
 
             if (_scopeFragment == null)
             {
                 _scopeFragment = new ScopeFragment();
-                FragmentManager.BeginTransaction().Add(_scopeFragment, LifetimeTag).Commit();
+                FragmentManager.BeginTransaction().Add(_scopeFragment, _lifetimeTag).Commit();
             }
 
             _viewInstanceScope = _scopeFragment.Scope.BeginViewInstanceScope(builder =>
@@ -94,28 +93,6 @@ namespace Sylapse.AutofacPlatformInjection.Droid
         {
             base.OnDestroy();
             _viewInstanceScope.Dispose();
-        }
-
-        class ScopeFragment : Android.Support.V4.App.Fragment
-        {
-            public ILifetimeScope Scope { get; private set; }
-
-            public ScopeFragment()
-            {
-                Scope = AppRoot.Container.BeginViewLifetimeScope();
-            }
-
-            public override void OnCreate(Bundle savedInstanceState)
-            {
-                base.OnCreate(savedInstanceState);
-                RetainInstance = true;
-            }
-
-            public override void OnDestroy()
-            {
-                base.OnDestroy();
-                Scope.Dispose();
-            }
         }
     }
 }
