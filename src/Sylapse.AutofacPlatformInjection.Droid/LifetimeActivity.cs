@@ -37,8 +37,7 @@ namespace Sylapse.AutofacPlatformInjection.Droid
                 builder.RegisterInstance(LayoutInflater.From(this)).ExternallyOwned();
             });            
             _viewLayoutScope = _viewInstanceScope.BeginViewLayoutScope();
-
-            _viewInstanceScope.Inject(this, InjectionPoints.OnCreate);
+            
             _viewLayoutScope.Inject(this, InjectionPoints.OnCreate);
         }
 
