@@ -42,6 +42,11 @@ namespace Sylapse.AutofacPlatformInjection
             return scope.BeginLifetimeScope(ViewLifetimeScope);
         }
 
+        public static ILifetimeScope BeginViewLifetimeScope(this ILifetimeScope scope, Action<ContainerBuilder> configurationAction)
+        {
+            return scope.BeginLifetimeScope(ViewLifetimeScope, configurationAction);
+        }
+
         public static ILifetimeScope BeginViewInstanceScope(this ILifetimeScope scope)
         {
             return scope.BeginLifetimeScope(ViewInstanceScope);
@@ -55,6 +60,11 @@ namespace Sylapse.AutofacPlatformInjection
         public static ILifetimeScope BeginViewLayoutScope(this ILifetimeScope scope)
         {
             return scope.BeginLifetimeScope(ViewLayoutScope);
+        }
+
+        public static ILifetimeScope BeginViewLayoutScope(this ILifetimeScope scope, Action<ContainerBuilder> configurationAction)
+        {
+            return scope.BeginLifetimeScope(ViewLayoutScope, configurationAction);
         }
     }
 }
