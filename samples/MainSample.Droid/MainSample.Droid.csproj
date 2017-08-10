@@ -125,19 +125,15 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MainSample\MainSample.csproj">
-      <Project>{84482571-8e31-4650-a4f8-2161b965d5b3}</Project>
-      <Name>MainSample</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\src\Sylapse.AutofacLateInjection\Sylapse.AutofacLateInjection.csproj">
+    <ProjectReference Include="..\..\src\Sylapse.AutofacLateInjection\Sylapse.AutofacLateInjection.csproj">
       <Project>{8D9C8E6D-C08A-4231-AAF6-492F58A45A1A}</Project>
       <Name>Sylapse.AutofacLateInjection</Name>
     </ProjectReference>
-    <ProjectReference Include="..\src\Sylapse.AutofacPlatformInjection.Droid\Sylapse.AutofacPlatformInjection.Droid.csproj">
+    <ProjectReference Include="..\..\src\Sylapse.AutofacPlatformInjection.Droid\Sylapse.AutofacPlatformInjection.Droid.csproj">
       <Project>{43C164A8-D61A-48EE-8B8A-4E28AE658879}</Project>
       <Name>Sylapse.AutofacPlatformInjection.Droid</Name>
     </ProjectReference>
-    <ProjectReference Include="..\src\Sylapse.AutofacPlatformInjection\Sylapse.AutofacPlatformInjection.csproj">
+    <ProjectReference Include="..\..\src\Sylapse.AutofacPlatformInjection\Sylapse.AutofacPlatformInjection.csproj">
       <Project>{0AE39A8C-A524-4A6C-B2AA-DE15E1765583}</Project>
       <Name>Sylapse.AutofacPlatformInjection</Name>
     </ProjectReference>

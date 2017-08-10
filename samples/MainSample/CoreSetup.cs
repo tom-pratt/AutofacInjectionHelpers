@@ -1,7 +1,4 @@
 ﻿using Sylapse.AutofacPlatformInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Autofac;
 
 namespace MainSample
