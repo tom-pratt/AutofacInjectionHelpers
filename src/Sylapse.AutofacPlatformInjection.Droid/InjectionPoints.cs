@@ -12,9 +12,9 @@ using Android.Widget;
 
 namespace Sylapse.AutofacPlatformInjection.Droid
 {
-    public static class InjectionPoints
-    {
-        public const string OnCreate = "oncreate";
-        public const string OnCreateView = "oncreateview";
-    }
+	public static class InjectionPoints
+	{
+		public const string OnCreate = "oncreate";
+		public const string OnCreateView = "oncreateview";
+	}
 }
