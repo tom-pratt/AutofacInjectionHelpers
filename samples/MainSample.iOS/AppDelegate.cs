@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using Sylapse.AutofacPlatformInjection;
 using UIKit;
 
 namespace MainSample.iOS
@@ -20,6 +21,11 @@ namespace MainSample.iOS
         {
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
+            
+            var appRoot = new AppRoot();
+            appRoot.Add(new CoreSetup());
+            appRoot.Add(new IOSSetup(this));
+            appRoot.Initialize();
 
             return true;
         }

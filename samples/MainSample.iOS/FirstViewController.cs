@@ -4,13 +4,22 @@ using System;
 
 using Foundation;
 using UIKit;
+using Sylapse.AutofacPlatformInjection.iOS;
 
 namespace MainSample.iOS
 {
-	public partial class FirstViewController : UIViewController
+	public partial class FirstViewController : LifetimeViewController
 	{
+        [InjectViewDidLoad]
+        private FirstViewModel _firstViewModel;
+
 		public FirstViewController (IntPtr handle) : base (handle)
 		{
 		}
-	}
+
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+        }
+    }
 }
