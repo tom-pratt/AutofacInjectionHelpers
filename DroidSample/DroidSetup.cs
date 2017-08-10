@@ -25,6 +25,11 @@ namespace MainSample.Droid
         public void Initialize(ContainerBuilder builder)
         {
             builder.RegisterInstance(_context);
+
+            // It's best if types that inherit from an Android base class dont't call
+            // Dispose as it's used by Xamarin. So call a "Finish" method instead.
+            builder.RegisterType<ItemsAdapter>().OnRelease(a => a.Finish());
+            builder.RegisterType<ItemViewHolder>().OnRelease(a => a.Finish());
         }
     }
 }
