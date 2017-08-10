@@ -100,10 +100,32 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
+    <Compile Include="MainViewController.cs" />
+    <Compile Include="MainViewController.designer.cs">
+      <DependentUpon>MainViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="FirstViewController.cs" />
+    <Compile Include="FirstViewController.designer.cs">
+      <DependentUpon>FirstViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Sylapse.AutofacPlatformInjection.iOS\Sylapse.AutofacPlatformInjection.iOS.csproj">
+      <Project>{B622F4F4-104D-4602-8762-3B6DB4D46158}</Project>
+      <Name>Sylapse.AutofacPlatformInjection.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sylapse.AutofacLateInjection\Sylapse.AutofacLateInjection.csproj">
+      <Project>{8D9C8E6D-C08A-4231-AAF6-492F58A45A1A}</Project>
+      <Name>Sylapse.AutofacLateInjection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MainSample\MainSample.csproj">
+      <Project>{84482571-8E31-4650-A4F8-2161B965D5B3}</Project>
+      <Name>MainSample</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\Sylapse.AutofacPlatformInjection\Sylapse.AutofacPlatformInjection.csproj">
+      <Project>{0AE39A8C-A524-4A6C-B2AA-DE15E1765583}</Project>
+      <Name>Sylapse.AutofacPlatformInjection</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
